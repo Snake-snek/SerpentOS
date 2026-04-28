@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serpent OS - Independent Linux Distribution</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Serpent OS</div>
+        <div class="menu">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('blog')">Blog</button>
+        </div>
+    </nav>
+
+    <main id="home" class="content-section">
+        <div class="hero">
+            <h1>The Future is Independent.</h1>
+            <p>A modern operating system built with <strong>LLVM/Clang</strong> and <strong>glibc</strong> from the ground up.</p>
+            <div class="status-badge">Status: Early Development</div>
+        </div>
+    </main>
+
+    <main id="blog" class="content-section" style="display: none;">
+        <article class="post">
+            <h2>The Genesis of Serpent OS</h2>
+            <p class="date">Post #1 | 2026</p>
+            <div class="post-text">
+                <p>Welcome to the very first post of the <strong>Serpent OS</strong> project. Let's be clear from the start: there is nothing to download here yet. This is the earliest stage of development—the "First Breath" of a new independent operating system.</p>
+                
+                <p>Behind this project stands the <strong>Serpent OS Team</strong>. To be completely honest, right now, the "team" consists of just one person. This is why the development process might take a significant amount of time. I am building this alone, and the road ahead is long.</p>
+                
+                <p>Currently, this website looks like a simple presentation (perhaps a bit "raw," like a first-grader's project), but it is a starting point. As the system evolves from a collection of build scripts into a functional Linux distribution, this site will grow with it. We are moving away from the legacy GCC toolchain in favor of a modern LLVM-based core.</p>
+                
+                <p>Stay tuned. The serpent is beginning to stir.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

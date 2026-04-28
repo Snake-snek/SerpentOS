@@ -1,0 +1,82 @@
+/* Основные настройки */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #3498db; /* Голубой цвет */
+    color: white;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Белая надпись */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu button {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu button:hover {
+    background-color: white;
+    color: #3498db;
+}
+
+/* Контент */
+.content-section {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.status-badge {
+    display: inline-block;
+    background: #2980b9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Блог */
+.post {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.date {
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
+.post-text p {
+    margin-bottom: 20px;
+}
